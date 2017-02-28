@@ -151,6 +151,11 @@
       </div>
     </form>
 
+    <div>
+      <h3 id='friendFound'></h3>
+      <div id="friendImage"></div>
+    </div>
+
   </div>
 
 </body>
@@ -207,6 +212,13 @@
           $("#q9").val("");
           $("#q10").val("");
 
+          $('#friendFound').html("Your Friend is found: " + data.name);
+          $('#friendImage').html("<img src=" + data.photoUrl + " width='200px'>")
+          
+
+          // console.log("--------------------------------")
+          // console.log(data);
+          // console.log(data.name );
         });
     });
 </script>
